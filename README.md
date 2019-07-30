@@ -44,6 +44,11 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+``` console
+2019-07-29 22:36:22.577631-0500 DateListPrintAllObjects[1965:25343] Here is a date: Mon Jul 29 22:36:22 2019
+2019-07-29 22:36:22.577769-0500 DateListPrintAllObjects[1965:25343] Here is a date: Tue Jul 30 22:36:22 2019
+2019-07-29 22:36:22.577808-0500 DateListPrintAllObjects[1965:25343] Here is a date: Sun Jul 28 22:36:22 2019
+Program ended with exit code: 0
 
 
 
