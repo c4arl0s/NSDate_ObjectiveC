@@ -7,9 +7,14 @@ Date objects are immutable, representing an invariant time interval relative to 
 To get the current date 
 
 ``` objective-c
-NSDate *date = [NSDate date]
+NSDate *date = [NSDate date];
 NSLog(@"Today is %@", date);
 ```
+
+``` console
+2019-07-29 22:44:19.938725-0500 NSDate_Project[2349:32571] Today is Mon Jul 29 22:44:19 2019
+```
+
 
 ```objective-c
 //
