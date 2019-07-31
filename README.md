@@ -90,5 +90,52 @@ Program ended with exit code: 0
 
 ![Screen Shot 2019-07-30 at 9 49 59 PM](https://user-images.githubusercontent.com/24994818/62180013-171cec00-b314-11e9-94e1-0e09d5a5980f.png)
 
+# Implementing an Action
+
+``` objective-c
+//
+//  ViewController.m
+//  NSDateAndPicker
+//
+//  Created by Carlos Santiago Cruz on 7/30/19.
+//  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSDate *now = [NSDate date];
+    [self.datePicker setDate:now animated:NO];
+    NSLog(@"now is : %@", now);
+}
+- (IBAction)didChangePicker:(id)sender {
+    NSDate *selectedDate = [self.datePicker date];
+    NSString *message = [[NSString alloc] initWithFormat:@"The date and time you selected is: %@", selectedDate];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Date and time selected"
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *oKButton = [UIAlertAction actionWithTitle:@"OK"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:nil];
+    [alert addAction:oKButton];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    
+}
+
+
+@end
+```
+
+
 
 
