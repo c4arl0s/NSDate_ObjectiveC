@@ -58,7 +58,6 @@ Program ended with exit code: 0
 
 # Simple use of NSDate and UIDatePicker
 
-```
 ``` objective-c
 //
 //  ViewController.m
@@ -88,6 +87,8 @@ Program ended with exit code: 0
 
 @end
 ```
+
+![Screen Shot 2019-07-30 at 9 49 59 PM](https://user-images.githubusercontent.com/24994818/62180013-171cec00-b314-11e9-94e1-0e09d5a5980f.png)
 
 
 
