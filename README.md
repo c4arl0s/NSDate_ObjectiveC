@@ -54,6 +54,40 @@ int main(int argc, const char * argv[]) {
 2019-07-29 22:36:22.577769-0500 DateListPrintAllObjects[1965:25343] Here is a date: Tue Jul 30 22:36:22 2019
 2019-07-29 22:36:22.577808-0500 DateListPrintAllObjects[1965:25343] Here is a date: Sun Jul 28 22:36:22 2019
 Program ended with exit code: 0
+```
+
+# Simple use of NSDate and UIDatePicker
+
+```
+``` objective-c
+//
+//  ViewController.m
+//  NSDateAndPicker
+//
+//  Created by Carlos Santiago Cruz on 7/30/19.
+//  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    NSDate *now = [NSDate date];
+    [self.datePicker setDate:now animated:NO];
+    NSLog(@"now is : %@", now);
+}
+
+
+@end
+```
 
 
 
